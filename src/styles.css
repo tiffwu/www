@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Quattrocento');
+
+@-ms-viewport {
+  width: device-width;
+}
+
+/* hero */
+
+.hero-head {
+  text-transform: uppercase;
+}
+
+.hero .nav {
+  padding: 15px 0;
+}
+
+.hero-body .title {
+  font-family: 'Quattrocento';
+}
+
+.hero-body .subtitle {
+  text-transform: uppercase;
+}
+
+a.nav-item {
+  color: #363636;
+  transition: color 0.5s linear 0s;
+}
+
+a.nav-item:hover {
+  color: #ff3860;
+}
+
+.hero-foot {
+  box-shadow: 0 -1px 0 rgba(219, 219, 219, .3);
+}
+
+/* footer */
+
+/*.footer {
+  background-color: #fff;
+} */
