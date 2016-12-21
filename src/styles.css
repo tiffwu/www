@@ -14,6 +14,10 @@
   padding: 15px 0;
 }
 
+.hero-body {
+  padding-bottom: 122px;
+}
+
 .hero-body .title {
   font-family: 'Quattrocento';
 }
@@ -24,15 +28,19 @@
 
 a.nav-item {
   color: #363636;
-  transition: color 0.5s linear 0s;
+  transition: color 0.3s linear 0s;
 }
 
 a.nav-item:hover {
-  color: #ff3860;
+  color: #3273dc;
 }
 
 .hero-foot {
+  background-color: #fff;
   box-shadow: 0 -1px 0 rgba(219, 219, 219, .3);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 /* footer */
