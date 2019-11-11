@@ -57,7 +57,7 @@ body {
 }
 
 .title {
-  font-family: 'Quattrocento';
+  font-family: Quattrocento, Georgia, serif;
   font-size: 48px;
   line-height: 1;
   font-weight: 300;
@@ -119,7 +119,7 @@ a.nav-item {
 }
 
 a.nav-item:hover {
-  color: #a34a28;
+  color: #f58b54;
 }
 
 .icon {
