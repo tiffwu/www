@@ -25,6 +25,7 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .main {
