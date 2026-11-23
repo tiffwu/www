@@ -51,7 +51,7 @@
       var p = document.createElement('p');
       var label = document.createElement('span');
       label.className = 'label';
-      label.textContent = headings[c] + ': ';
+      label.textContent = headings[c];
       p.appendChild(label);
       p.insertAdjacentHTML('beforeend', cells[c].innerHTML);
       panel.appendChild(p);
