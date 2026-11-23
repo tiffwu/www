@@ -1,0 +1,82 @@
+/* Text pages, such as jellyfin.md. Builds on styles.css. */
+
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 20px 80px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.page h1 {
+  font-family: Quattrocento, Georgia, serif;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1.15;
+  margin: 0 0 32px;
+}
+
+.page h2 {
+  font-family: Quattrocento, Georgia, serif;
+  font-size: 26px;
+  font-weight: 400;
+  margin: 48px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e8e4e4;
+}
+
+.page ul,
+.page ol {
+  padding-left: 24px;
+}
+
+.page li {
+  margin: 4px 0;
+}
+
+.page a {
+  color: #211717;
+  text-decoration-color: #b5aeae;
+  text-underline-offset: 3px;
+  transition: color 0.3s linear 0s;
+}
+
+.page a:hover {
+  color: #6b6363;
+}
+
+.page code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+  background: #f5f2f2;
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+
+/* Scrolls sideways on narrow screens instead of squashing the columns. */
+.page table {
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.page th,
+.page td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 14px;
+  border-bottom: 1px solid #e8e4e4;
+  min-width: 120px;
+}
+
+.page th {
+  font-weight: 600;
+  border-bottom: 2px solid #d6d0d0;
+}
+
+.page tr:last-child td {
+  border-bottom: none;
+}
