@@ -1,5 +1,6 @@
 ---
 layout: page
+page_class: devices
 title: Connecting to Tiff's Jellyfin media server
 ---
 

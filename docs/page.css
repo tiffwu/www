@@ -80,3 +80,52 @@
 .page tr:last-child td {
   border-bottom: none;
 }
+
+/* On phones, the device table shows each row as a card: the device as its heading, then the app, then the Tailscale tip. */
+@media (max-width: 600px) {
+  .devices table,
+  .devices tbody,
+  .devices tr,
+  .devices td {
+    display: block;
+  }
+
+  .devices table {
+    overflow-x: visible;
+  }
+
+  .devices thead {
+    display: none;
+  }
+
+  .devices tr {
+    border: 1px solid #e8e4e4;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+  }
+
+  .devices td {
+    border: none;
+    padding: 0;
+    min-width: 0;
+  }
+
+  .devices td:first-child {
+    font-family: Quattrocento, Georgia, serif;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .devices td:nth-child(3) {
+    margin-top: 8px;
+    color: #4a4040;
+  }
+
+  .devices td:nth-child(3)::before {
+    content: "Keeping Tailscale connected: ";
+    font-weight: 600;
+    color: #211717;
+  }
+}
