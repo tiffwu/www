@@ -81,51 +81,57 @@
   border-bottom: none;
 }
 
-/* On phones, the device table shows each row as a card: the device as its heading, then the app, then the Tailscale tip. */
+/* Device tabs: tabs.js builds them from the device table. Phones get the tabs, wider screens keep the table. */
+.device-tabs {
+  display: none;
+  margin: 20px 0;
+}
+
+.device-tablist {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  border-bottom: 1px solid #e8e4e4;
+}
+
+.device-tab {
+  flex-shrink: 0;
+  font: inherit;
+  font-size: 15px;
+  color: #6b6363;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.device-tab[aria-selected="true"] {
+  color: #211717;
+  font-weight: 600;
+  border-bottom-color: #211717;
+}
+
+.device-panel {
+  padding: 14px 2px 0;
+  font-size: 16px;
+}
+
+.device-panel p {
+  margin: 0 0 10px;
+}
+
+.device-panel .label {
+  font-weight: 600;
+}
+
 @media (max-width: 600px) {
-  .devices table,
-  .devices tbody,
-  .devices tr,
-  .devices td {
-    display: block;
-  }
-
-  .devices table {
-    overflow-x: visible;
-  }
-
-  .devices thead {
+  .devices.has-tabs table {
     display: none;
   }
 
-  .devices tr {
-    border: 1px solid #e8e4e4;
-    border-radius: 8px;
-    padding: 12px 14px;
-    margin-bottom: 12px;
-  }
-
-  .devices td {
-    border: none;
-    padding: 0;
-    min-width: 0;
-  }
-
-  .devices td:first-child {
-    font-family: Quattrocento, Georgia, serif;
-    font-size: 19px;
-    font-weight: 600;
-    margin-bottom: 4px;
-  }
-
-  .devices td:nth-child(3) {
-    margin-top: 8px;
-    color: #4a4040;
-  }
-
-  .devices td:nth-child(3)::before {
-    content: "Keeping Tailscale connected: ";
-    font-weight: 600;
-    color: #211717;
+  .devices.has-tabs .device-tabs {
+    display: block;
   }
 }

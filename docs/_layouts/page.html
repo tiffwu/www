@@ -13,5 +13,6 @@
     <main class="page {{ page.page_class }}">
       {{ content }}
     </main>
+    {% if page.page_class == "devices" %}<script src="/tabs.js?v={{ site.time | date: '%s' }}"></script>{% endif %}
   </body>
 </html>
