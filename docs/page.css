@@ -91,7 +91,9 @@
   display: flex;
   gap: 6px;
   overflow-x: auto;
-  border-bottom: 1px solid #e8e4e4;
+  overflow-y: hidden;
+  /* An inset shadow, not a border, so the selected tab's underline can sit on top of it. */
+  box-shadow: inset 0 -1px 0 #e8e4e4;
 }
 
 .device-tab {
@@ -102,7 +104,6 @@
   background: none;
   border: none;
   border-bottom: 2px solid transparent;
-  margin-bottom: -1px;
   padding: 8px 10px;
   cursor: pointer;
 }
